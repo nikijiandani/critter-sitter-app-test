@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/api/users')
+    fetch('https://critter-sitter-server.herokuapp.com/')
     .then(results => {
       results.json().then((res) => {
         console.log(res)
